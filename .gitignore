@@ -3,3 +3,5 @@
 *.bin
 *.elf
 *.map
+
+rtos/FreeRTOSv10.0.0/

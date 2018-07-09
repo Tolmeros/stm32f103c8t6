@@ -3,12 +3,11 @@
  */
 #include <getline.h>
 
-/* If you experience memory.h does not exist, uncomment
- * the #include <string.h> instead (comment out memory.h)
- */
-
+#if HAVE_MEMORY_H
 #include <memory.h>
-/* #include <string.h> */
+#else
+#include <string.h>
+#endif
 
 #define CONTROL(c) ((c) & 0x1F)
 
